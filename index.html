@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeChat - A real-time socket ios App</title>
+    <!-- this script is used to connect with client -->
+    <!-- defer make download the scripts and when dom loads it will run -->
+    <!-- index and client and are connected through socket.io/socket.io.js  -->
+    <script defer src="http://localhost:9000/socket.io/socket.io.js"></script>
+    <script defer src="./Js/client.js"></script>
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="./780060-200.png" alt="Wechat" />
+      <h1>Welcome To the Wechat</h1>
+    </nav>
+    <div class="container"></div>
+    <!-- MESSAGES sending form ⬇️ -->
+    <div class="send">
+      <form action="#" id="send-container">
+        <input type="text" name="messageImp" id="messageImp" />
+        <button class="btn" type="submit">Send</button>
+      </form>
+    </div>
+  </body>
+</html>
